@@ -1,57 +1,42 @@
-/* Custom Stylesheet */
-/**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
- */
-
-nav ul a,
-nav .brand-logo {
-  color: #444;
+div.project {
+  float: left;
+  clear: both;
+  width: 100%;
+  padding-bottom: 20px;
+  margin: 10px;
 }
 
-p {
-  line-height: 2rem;
+div.project .image {
+  float: left;
+  width: 50%;
+  position: relative;
 }
 
-.button-collapse {
-  color: #26a69a;
+div.project .image img {
+  width: 500px;
+  height: 300px;
+  border-radius: 10px;
 }
 
-.parallax-container {
-  min-height: 380px;
-  line-height: 0;
-  height: auto;
-  color: rgba(255,255,255,.9);
-}
-  .parallax-container .section {
-    width: 100%;
-  }
-
-@media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
-  }
-  #index-banner .section {
-    top: 10%;
-  }
+div.project .image .overlay {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  opacity: 0.5;
+  position: absolute;
+  height: 100%;
+  top: 0px;
+  z-index: 10000;
+  background-color: black;
+  color: white;
+  display: none;
 }
 
-@media only screen and (max-width : 600px) {
-  #index-banner .section {
-    top: 0;
-  }
+div.project .desc {
+  float: left;
+  width: 50%;
 }
 
-.icon-block {
-  padding: 0 15px;
-}
-.icon-block .material-icons {
-  font-size: inherit;
-}
-
-footer.page-footer {
-  margin: 0;
+div.buttons {
+  border-top-width: 150px;
 }
